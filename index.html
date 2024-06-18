@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos de moi</a></li>
+                <li><a href="#skills">Mes compétences</a></li>
+                <li><a href="#contact">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="moi">
+            <div class="anis">
+                <h1>Je suis</h1>
+                <h1>Anis OTMANI</h1>
+                <h2>Étudiant en Informatique</h2>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="description">
+                <span><h2>À propos de moi</h2></span>
+                <p>Actuellement en deuxième année de BUT Informatique, je suis passionné par l'informatique et plus spécifiquement par le développement logiciel et web.</p>
+                <p>Mon parcours académique et mes projets personnels m'ont permis de développer des compétences solides dans ces domaines et je suis toujours à la recherche de nouvelles opportunités pour approfondir mes connaissances et contribuer à des projets innovants.</p>
+                <p>Dans ce portfolio que j'ai réalisé, je vais vous présenter mes compétences, mon parcours ainsi que mes projets professionnels et personnels.</p>
+                <p>Pour toute question, n’hésitez pas à me contacter :)</p>
+            </div>
+            <div class="image">
+                <img src="anis.jpg" alt="anis">
+            </div>
+        </section>
+
+        <section id="skills" class="compétences-portfolio">
+            <div class="compétences">
+                
+                <div class="skills">
+                    <h1>Compétences</h1>
+                    <div class="skill1">
+                        <h2>WEB</h2>
+                        <div class="skill">
+                            <h3>HTML</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;">90%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>CSS</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>JavaScript</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;">75%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>Python</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;">85%</div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="skill2">
+                        <h2>Programmation</h2>
+                        <div class="skill">
+                            <h3>C</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;">90%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>Java</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>Python</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;">75%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>Kotlin</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;">85%</div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="skill3">
+                        <h2>Base de donnée</h2>
+                        <div class="skill">
+                            <h3>SqlDeveloper</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;">90%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>MongoDB</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                        </div>
+                        
+        
+                    </div>
+                    <div class="portfolio">
+                        <img src="image.png" alt="cv">
+                        <a href="CV_Anis_OTMANI.pdf" download="CV_Anis_OTMANI">
+                            <button>Télécharger le PDF</button>
+                        </a>
+                    </div>
+            </div>
+
+           
+        </section>
+        <div class="gallery">
+            <div class="project" onclick="showInfo('project1')">
+                <img src="sae_ihm.png" alt="Dream Kebab">
+                <div class="project-title">
+                    <h3>MediPath</h3>
+                    <button>Voir</button>
+                </div>
+            </div>
+            <div class="project" onclick="showInfo('project2')">
+                <img src="fourniture.png" alt="4Kicks">
+                <div class="project-title">
+                    <h3>Peninsule</h3>
+                    <button>Voir</button>
+                </div>
+            </div>
+            <div class="project" onclick="showInfo('project2')">
+                <img src="fourniture.png" alt="MediPath">
+                <div class="project-title">
+                    <h3>Site Kebab</h3>
+                    <button>Voir</button>
+                </div>
+            </div>
+        </div>
+    
+       <div id="project1" class="project-info" onclick="hideInfo('project1')">
+    <div class="info-content" onclick="event.stopPropagation()">
+        <span class="close" onclick="hideInfo('project1')">&times;</span>
+        <h2>Projet MediPath</h2>
+        <div class="project-details">
+            <img src="sae_ihm.png" alt="MediPath">
+            <div class="project-description">
+                <h3>Site</h3>
+                <p><a href="https://github.com/anisotmani69/Projet-Graphe-Java/tree/master" target="_blank">github/anisotmani96</a></p>
+                <h3>Outils utilisés</h3>
+                <p>Java, Swing</p>
+                <h3>Description</h3>
+                <p>
+                    Medipath est un logiciel de prise de décision basé sur un graphique conçu pour l'université.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+        <div id="project2" class="project-info" onclick="hideInfo('project2')">
+            <div class="info-content" onclick="event.stopPropagation()">
+                <span class="close" onclick="hideInfo('project2')">&times;</span>
+                <h2>Projet Peninsule</h2>
+                <div class="project-details">
+                    <img src="fourniture.png" alt="MediPath">
+                    <div class="project-description">
+                        <h3>Site</h3>
+                        <p><a href="https://github.com/anisotmani69/Site-Web-Ventes-fournitures-scolaire" target="_blank">github/anisotmani96</a></p>
+                        <h3>Outils utilisés</h3>
+                        <p>Html, Css, Swelte, Python, JavaScript</p>
+                        <h3>Description</h3>
+                        <p>
+                            Peninsule est un site web E-Comemrce qui vent des fourniture scolaires.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="project3" class="project-info" onclick="hideInfo('project3')">
+            <div class="info-content" onclick="event.stopPropagation()">
+                <span class="close" onclick="hideInfo('project3')">&times;</span>
+                <h2>MediPath</h2>
+                <p>Information about MediPath...</p>
+            </div>
+        </div>
+        
+    
+        <script src="script.js"></script>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/anis-otmani-134998275/">
+                    <img src="linkedin (1).png" alt="linkedin">
+                </a>
+                <a href="https://github.com/anisotmani69">
+                    <img src="github.png" alt="github">
+                </a>
+            </div>
+        </div>
+        <div class="cop">
+            © 2024 - Anis Otmani - Etudiant en Informatique
+        </div>
+    </footer>
+    
+</body>
+</html>
